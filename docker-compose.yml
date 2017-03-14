@@ -1,0 +1,11 @@
+version: '2'  
+
+services:
+  ngircd:
+    image: seuf/ngircd
+    hostname: ngircd
+    container_name: ngircd
+    expose:
+      - "6667"
+    ports:
+      - "6667:6667"
